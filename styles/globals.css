@@ -2,9 +2,101 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body, #__next {
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#__next {
   height: 100%;
 }
+
 body {
-  @apply bg-gray-50 text-gray-800;
+  @apply bg-slate-50 text-slate-800 antialiased;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
+
+@layer components {
+  .container-custom {
+    @apply mx-auto w-full max-w-7xl px-6;
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .glass-card {
+    @apply rounded-2xl shadow-xl;
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  }
+
+  .gradient-hero {
+    background:
+      radial-gradient(1200px 600px at 10% -10%, rgba(52, 211, 153, 0.35), transparent 55%),
+      radial-gradient(1000px 500px at 110% 20%, rgba(16, 185, 129, 0.25), transparent 50%),
+      linear-gradient(135deg, #022c22 0%, #064e3b 45%, #0f172a 100%);
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(90deg, #34d399, #2dd4bf, #38bdf8);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3 font-semibold text-white shadow-lg transition-all duration-200;
+    background: linear-gradient(90deg, #10b981, #14b8a6);
+    box-shadow: 0 10px 25px -5px rgba(16, 185, 129, 0.4);
+  }
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px -5px rgba(16, 185, 129, 0.5);
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl border px-6 py-3 font-semibold transition-all duration-200;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300;
+  }
+  .card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 25px 50px -12px rgba(2, 44, 34, 0.25);
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  .animate-fade-up {
+    animation: fadeUp 0.8s ease both;
+  }
+  .animate-blink {
+    animation: blink 1.2s steps(1) infinite;
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.scrollbar-thin::-webkit-scrollbar { width: 6px; }
+.scrollbar-thin::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 999px; }
