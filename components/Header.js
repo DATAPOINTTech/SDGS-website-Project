@@ -26,14 +26,14 @@ export default function Header() {
   useEffect(() => setOpen(false), [router.pathname])
 
   return (
-    <header className={`fixed top-0 z-40 w-full transition-all duration-300 ${scrolled ? 'bg-slate-900/90 shadow-lg backdrop-blur-md' : 'bg-transparent'}`}>
+    <header className={`fixed top-0 z-40 w-full bg-white transition-all duration-300 ${scrolled ? 'shadow-lg' : 'shadow-sm'}`}>
       <div className="container-custom flex items-center justify-between py-4">
         <Link href="/" className="flex items-center gap-3">
-          <span className="flex items-center rounded-xl bg-white px-3 py-1.5 shadow-md">
+          <span className="flex items-center rounded-xl bg-emerald-50 px-3 py-1.5">
             <img src="/images/logo.png" alt="SDGS" className="h-7 object-contain" />
           </span>
-          <span className="hidden text-sm font-bold text-white md:block">
-            SDGS <span className="font-normal text-emerald-300">Welfare Organization</span>
+          <span className="hidden text-sm font-bold text-slate-900 md:block">
+            Sustainable Developed <span className="font-normal text-emerald-600">Green Sindh</span>
           </span>
         </Link>
 
@@ -43,7 +43,7 @@ export default function Header() {
               key={item.href}
               href={item.href}
               className={`text-sm font-medium transition-colors ${
-                router.pathname === item.href ? 'text-emerald-300' : 'text-slate-200 hover:text-emerald-300'
+                router.pathname === item.href ? 'text-emerald-600' : 'text-slate-700 hover:text-emerald-600'
               }`}
             >
               {item.label}
@@ -56,7 +56,7 @@ export default function Header() {
 
         <button
           onClick={() => setOpen(!open)}
-          className="text-white md:hidden"
+          className="text-slate-900 md:hidden"
           aria-label="Toggle menu"
         >
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
@@ -66,12 +66,12 @@ export default function Header() {
       </div>
 
       {open && (
-        <nav className="border-t border-white/10 bg-slate-900/95 px-6 py-4 backdrop-blur-md md:hidden">
+        <nav className="border-t border-slate-100 bg-white px-6 py-4 md:hidden">
           {NAV.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className={`block py-2 text-sm ${router.pathname === item.href ? 'text-emerald-300' : 'text-slate-200'}`}
+              className={`block py-2 text-sm ${router.pathname === item.href ? 'text-emerald-600' : 'text-slate-700'}`}
             >
               {item.label}
             </Link>
