@@ -1,0 +1,891 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+ <style>
+    /* Responsive Fix for Hero Section Overlap on Mobile/Tablet */
+    @media only screen and (max-width: 991px) {
+        .slider-area .hero__caption {
+            /* Adds a white overlay box behind the text so it is readable */
+            background-color: rgba(255, 255, 255, 0.92) !important;
+            padding: 30px !important;
+            border-radius: 15px;
+            box-shadow: 0px 5px 20px rgba(0,0,0,0.05);
+            position: relative;
+            z-index: 2;
+            
+            /* THIS IS THE NEW FIX: Pushes the text box down below the mobile header */
+            margin-top: 80px !important; 
+        }
+        
+        /* Adjust the spacing of the buttons for mobile */
+        .slider-area .hero__btn {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .slider-area .hero__btn .btn {
+            margin-left: 0 !important;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    /* Extra adjustments for very small phone screens */
+    @media only screen and (max-width: 575px) {
+        .slider-area .hero__caption {
+             /* Slightly more push-down on tiny screens if needed */
+             margin-top: 100px !important;
+        }
+        .slider-area .hero__caption h1 {
+            font-size: 32px !important; /* Makes the heading fit better */
+            line-height: 1.3 !important;
+        }
+        .slider-area .hero__caption p {
+            font-size: 15px !important;
+        }
+    }
+</style>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title> SDGS Welfare Organization</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
+
+	<!-- CSS here -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/progressbar_barfiller.css">
+    <link rel="stylesheet" href="assets/css/gijgo.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/animated-headline.css">
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="assets/css/themify-icons.css">
+	<link rel="stylesheet" href="assets/css/slick.css">
+	<link rel="stylesheet" href="assets/css/nice-select.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- ? Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                   <img src="assets/img/logo/SDGS-logo-portrait.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area">
+            <div class="main-header ">
+                <!-- <div class="header-top d-none d-lg-block">
+                    <div class="container-fluid">
+                        <div class="col-xl-12">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <div class="header-info-left d-flex">
+                                    <ul>     
+                                        <li>Phone: +99 (0) 101 0000 888</li>
+                                        <li>Email: noreply@yourdomain.com</li>
+                                    </ul>
+                                    <div class="header-social">    
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a  href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a></li>
+                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                            <li> <a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="header-info-right d-flex align-items-center">
+                                    <div class="select-this">
+                                        <form action="#">
+                                            <div class="select-itms">
+                                                <select name="select" id="select1">
+                                                    <option value="">English</option>
+                                                    <option value="">Bangla</option>
+                                                    <option value="">Arabic</option>
+                                                    <option value="">Hindi</option>
+                                                </select>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <ul class="contact-now">     
+                                        <li><a href="#">Subscribe Now</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="header-bottom  header-sticky">
+                    <div class="container-fluid">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2">
+                                <div class="logo">
+                                    <a href='/'><img src="assets/img/logo/SDGS-logo-landscape.png" alt="SDGS Welfare Organization"></a>
+                                </div>
+                            </div>
+                            <div class="col-xl-10 col-lg-10">
+                                <div class="menu-wrapper  d-flex align-items-center justify-content-end">
+                                    <!-- Main-menu -->
+                                    <div class="main-menu d-none d-lg-block">
+                                        <nav>
+                                            <ul id="navigation">                                                                                          
+                                                <li><a href='/'>Home</a></li>
+                                                <li><a href='/about'>About</a></li>
+                                                <li><a href='/projects'>Projects</a></li>
+                                                <li><a href='/our-workings'>Our Workings</a></li>
+                                                <!-- <li><a href="blog.html">Blog</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="blog.html">Blog</a></li>
+                                                       <li><a href="blog_details.html">Blog Details</a></li>
+                                                        <li><a href="elements.html">Element</a></li>
+                                                    </ul>
+                                                </li> -->
+                                                <li><a href='/contact'>Contact</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <!-- Header-btn -->
+                                    <div class="header-right-btn d-none d-lg-block ml-20">
+                                        <a class='btn header-btn' href='/contact'>Donate</a>
+                                    </div>
+                                </div>
+                            </div> 
+                            <!-- Mobile Menu -->
+                            <div class="col-12">
+                                <div class="mobile_menu d-block d-lg-none"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+    <!-- header end -->
+    <main>
+    <!-- slider Area Start-->
+    <div class="slider-area">
+        <div class="slider-active">
+            <!-- Single Slider -->
+            <div class="single-slider slider-height d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-5 col-md-6 col-sm-7">
+                            <div class="hero__caption">
+                                <span style="color: #09cc7f; font-size: 18px; font-weight: bold; display: block; margin-bottom: 10px;" data-animation="fadeInUp" data-delay=".4s">SUSTAINABLE DEVELOPMENT GREEN SINDH</span>
+<h1 data-animation="fadeInUp" data-delay=".6s">Empowering Communities,<br> Transforming Lives<br> in Sindh.</h1>
+                                <!-- <h1 data-animation="fadeInUp" data-delay=".6s">Empowering Communities,<br> Transforming Lives<br> in Sindh.</h1> -->
+                                <!-- <P data-animation="fadeInUp" data-delay=".8s" >SDGS Welfare Organization is a grassroots social welfare NGO. Guided by the Sustainable Development Goals (SDGs), we are dedicated to building a more equitable and resilient future for our people. We are committed to providing essential healthcare, quality education, and rapid relief to those who need it most across Sindh, Pakistan.</P> -->
+                                
+                                <!-- Full text for Desktop/Laptop (Hides on smaller screens) -->
+<p class="d-none d-lg-block" data-animation="fadeInUp" data-delay=".8s">
+    SUSTAINABLE DEVELOPMENT GREEN SINDH (SDGS) WELFARE ORGANIZATION is a grassroots social welfare NGO. Guided by the Sustainable Development Goals (SDGs), we are dedicated to building a more equitable and resilient future for our people. We are committed to providing essential healthcare, quality education, and rapid relief to those who need it most across Sindh, Pakistan.
+</p>
+
+<!-- Shorter text for Mobile/Tablets (Hides on large desktop screens) -->
+<p class="d-block d-lg-none" data-animation="fadeInUp" data-delay=".8s">
+    </p>
+                                <!-- Hero-btn -->
+                                <div class="hero__btn">
+                                    <a class='btn hero-btn mb-10' data-animation='fadeInLeft' data-delay='.8s' href='/contact'>Donate Now</a>
+                                    <a class='btn white-btn mb-10 ml-15' data-animation='fadeInRight' data-delay='1.0s' href='/about'>
+                                        Discover Our Work
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Single Slider -->
+            <div class="single-slider slider-height d-flex align-items-center">
+                <div class="container">
+                    <div class="row">
+                         <div class="col-xl-5 col-lg-5 col-md-6 col-sm-7">
+                            <div class="hero__caption">
+                                <h1 data-animation="fadeInUp" data-delay=".6s">Empowering Communities,<br> Transforming Lives in Sindh.</h1>
+                                <P data-animation="fadeInUp" data-delay=".8s" >SDGS Welfare Organization is a grassroots social welfare NGO. Guided by the Sustainable Development Goals (SDGs), we are dedicated to building a more equitable and resilient future for our people. We are committed to providing essential healthcare, quality education, and rapid relief to those who need it most across Sindh, Pakistan.</P>
+                                <!-- Hero-btn -->
+                                <div class="hero__btn">
+                                    <a class='btn hero-btn mb-10' data-animation='fadeInLeft' data-delay='.8s' href='/contact'>Donate Now</a>
+                                    <a class='btn white-btn mb-10 ml-15' data-animation='fadeInRight' data-delay='1.0s' href='/about'>
+                                        Discover Our Work
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider Area End-->
+    <!--? Services Area Start -->
+    <!-- <div class="service-area section-padding30"> -->
+    
+<div class="service-area section-padding30" style="padding-bottom: 10px !important;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
+                    <!-- Section Tittle -->
+                    <div class="section-tittle text-center mb-80">
+                        <span>Our Causes / What We Do</span>
+                        <h2>Pillars of Action</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-50" style="display: flex;">
+                    <div class="single-cat text-center" style="width: 100%; display: flex; flex-direction: column; justify-content: center;">
+                        <div class="cat-icon">
+                            <span class="flaticon-null-1"></span>
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="services.html">Emergency Medical Relief</a></h5>
+                            <p><strong>Bridging the Gap in Healthcare Access</strong><br>In many remote and disaster-affected areas of Sindh, basic medical care is completely out of reach. We organize heavily equipped, free medical camps to bring healthcare directly to the vulnerable.<br><strong>Our Approach:</strong> Using our red mobile medical vans, our dedicated teams of volunteer doctors and nurses travel to underserved communities.<br><strong>Services Provided:</strong> We offer comprehensive health check-ups, essential diagnostics, and free medicine distribution to families who otherwise could not afford treatment.<br><strong>The Goal:</strong> To prevent minor illnesses from becoming life-threatening and to ensure maternal and pediatric health remains a priority, no matter the location.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-50" style="display: flex;">
+                    <div class="single-cat active text-center" style="width: 100%; display: flex; flex-direction: column; justify-content: center;">
+                        <div class="cat-icon">
+                            <span class="flaticon-think"></span>
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="services.html">Disaster Response & Social Welfare</a></h5>
+                            <p><strong>Standing Resilient Against Climate Adversity</strong><br>Sindh is increasingly vulnerable to extreme weather and climate adversity. When disaster strikes, the SDGS Welfare Organization is immediately on the ground, serving as a vital lifeline for affected families.<br><strong>Crisis Intervention:</strong> We specialize in rapid response, from distributing emergency food rations and survival supplies to families facing sudden displacement or extreme poverty.<br><strong>Heat Wave Relief:</strong> During life-threatening summer temperatures, we proactively set up heat wave relief camps, providing critical hydration, shade, and medical support to prevent heatstroke and save lives.<br><strong>The Goal:</strong> To ensure that no individual is left behind during a crisis, providing the immediate relief necessary to help communities get back on their feet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 mb-50" style="display: flex;">
+                    <div class="single-cat text-center" style="width: 100%; display: flex; flex-direction: column; justify-content: center;">
+                        <div class="cat-icon">
+                            <span class="flaticon-gear"></span>
+                        </div>
+                        <div class="cat-cap">
+                            <h5><a href="services.html">Education for the Future</a></h5>
+                            <p><strong>Nurturing Minds and the Environment</strong><br>We firmly believe that education is the absolute foundation of any sustainable, thriving community. We are committed to breaking the cycle of poverty by empowering the next generation.<br><strong>Makeshift & Local Schools:</strong> We actively fund and support local learning centers, providing vital resources, books, and safe outdoor school settings for children who lack access to formal infrastructure.<br><strong>Environmental Stewardship:</strong> Education goes beyond the classroom. We foster a strong spirit of environmental responsibility in our youth by organizing interactive tree-planting campaigns and climate awareness drives.<br><strong>The Goal:</strong> To cultivate educated, environmentally conscious citizens who will lead Sindh into a sustainable future.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+       
+            <div class="row">
+    <div class="col-lg-4 col-md-6 col-sm-6 mb-50" style="display: flex;">
+        <div class="single-cat text-center" style="width: 100%; display: flex; flex-direction: column; justify-content: center;">
+            <div class="cat-icon">
+                <span class="flaticon-null-1"></span>
+            </div>
+            <div class="cat-cap">
+                <h5><a href="services.html">Emergency Medical Relief</a></h5>
+                <p><strong>Bridging the Gap:</strong> We organize free medical camps and utilize mobile medical vans to bring essential healthcare, diagnostics, and medicines directly to vulnerable communities in remote and disaster-affected areas.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-6 col-sm-6 mb-50" style="display: flex;">
+        <div class="single-cat active text-center" style="width: 100%; display: flex; flex-direction: column; justify-content: center;">
+            <div class="cat-icon">
+                <span class="flaticon-think"></span>
+            </div>
+            <div class="cat-cap">
+                <h5><a href="services.html">Disaster Response & Social Welfare</a></h5>
+                <p><strong>Standing Resilient:</strong> From emergency food rations and survival supplies to heat wave relief camps, our rapid response teams provide a vital lifeline to families facing climate adversity and sudden displacement.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="col-lg-4 col-md-6 col-sm-6 mb-50" style="display: flex;">
+        <div class="single-cat text-center" style="width: 100%; display: flex; flex-direction: column; justify-content: center;">
+            <div class="cat-icon">
+                <span class="flaticon-gear"></span>
+            </div>
+            <div class="cat-cap">
+                <h5><a href="services.html">Education for the Future</a></h5>
+                <p><strong>Nurturing Minds:</strong> We empower the next generation to break the cycle of poverty by funding local makeshift schools, providing learning resources, and fostering environmental responsibility through youth tree-planting campaigns.</p>
+            </div>
+        </div>
+    </div>
+</div>
+       
+        </div>
+    </div>
+    <!-- Services Area End -->
+    <!--? About Law Start-->
+    <!-- <section class="about-low-area section-padding2"> -->
+        <!--? About Law Start-->
+    <section class="about-low-area" style="padding-top: 60px !important; padding-bottom: 20px !important;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-10">
+                    <div class="about-caption mb-50">
+                        <!-- Section Tittle -->
+                        <div class="section-tittle mb-35">
+                            <span>Who We Are</span>
+                            <h2>A Grassroots Movement for Sustainable Change</h2>
+                        </div>
+                        <p>We are a dedicated group of professionals, volunteers, and humanitarians working tirelessly to build sustainable communities through direct action. The SDGS Welfare Organization was born out of a profound need to address the immediate crises facing our region while simultaneously laying the groundwork for long-term prosperity.</p>
+                        <p>From mobilizing emergency heat wave relief during extreme climate events to establishing makeshift schools that keep children learning, we stand shoulder-to-shoulder with our community in times of both crisis and growth. We believe that access to basic rights—health, food, and education—is not a privilege, but a necessity for human dignity.</p>
+                    </div>
+                    <a class='btn' href='/about'>About US</a>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <!-- about-img -->
+                    <div class="about-img ">
+                        <div class="about-font-img d-none d-lg-block">
+                            <img src="assets/img/gallery/About-2.jpeg"  width="350px" height="350px"  alt="">
+                        </div>
+                        <div class="about-back-img ">
+                            <img src="assets/img/gallery/about-1.jpeg" width="350px" height="400px"  alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Law End-->
+        <!-- Our Projects Start -->
+    <!-- <div class="our-cases-area section-padding30"> -->
+    <div class="our-cases-area" style="padding-top: 40px !important; padding-bottom: 20px !important;"></div> 
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
+                    <!-- Section Tittle -->
+                    <div class="section-tittle text-center mb-80">
+                        <span>Our Projects</span>
+                        <h2>Explore our latest projects</h2>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-cases mb-40">
+                        <div class="cases-img">
+                            <a href="project_details.html?id=medical-camps"><img src="assets/img/gallery/project_flood_camp.jpeg" alt="" style="width: 100%; height: 250px; object-fit: cover;"></a>
+                        </div>
+                        <div class="cases-caption" style="padding: 30px;">
+                            <h3><a href="project_details.html?id=medical-camps">Medical Camp for Flood Effected areas of Sindh 2022 ( District Naushero Feroze)</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-cases mb-40">
+                        <div class="cases-img">
+                            <a href="project_details.html?id=emergency-relief"><img src="assets/img/gallery/project_relief.jpeg" alt="" style="width: 100%; height: 250px; object-fit: cover;"></a>
+                        </div>
+                        <div class="cases-caption" style="padding: 30px;">
+                            <h3><a href="project_details.html?id=emergency-relief">Disaster Response & Social Welfare</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-cases mb-40">
+                        <div class="cases-img">
+                            <a href="project_details.html?id=education-initiatives"><img src="assets/img/gallery/project_education.jpeg" alt="" style="width: 100%; height: 250px; object-fit: cover;"></a>
+                        </div>
+                        <div class="cases-caption" style="padding: 30px;">
+                            <h3><a href="project_details.html?id=education-initiatives">Students Supported in Local Education Initiatives</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-cases mb-40">
+                        <div class="cases-img">
+                            <a href="project_details.html?id=flood-medical"><img src="assets/img/gallery/project_flood_medical.jpeg" alt="" style="width: 100%; height: 250px; object-fit: cover;"></a>
+                        </div>
+                        <div class="cases-caption" style="padding: 30px;">
+                            <h3><a href="project_details.html?id=flood-medical">Wheelchair Distribution and Support for Disabled Persons</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-cases mb-40">
+                        <div class="cases-img">
+                            <a href="project_details.html?id=ramzan-rashan"><img src="assets/img/gallery/project_ramzan_rashan.jpeg" alt="" style="width: 100%; height: 250px; object-fit: cover;"></a>
+                        </div>
+                        <div class="cases-caption" style="padding: 30px;">
+                            <h3><a href="project_details.html?id=ramzan-rashan">Rashan Distribution in the Month of Ramzan</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-cases mb-40">
+                        <div class="cases-img">
+                            <a href="project_details.html?id=tree-plantation"><img src="assets/img/gallery/project_tree_plantation.jpeg" alt="" style="width: 100%; height: 250px; object-fit: cover;"></a>
+                        </div>
+                        <div class="cases-caption" style="padding: 30px;">
+                            <h3><a href="project_details.html?id=tree-plantation">Tree Plantations for Green Enviroment</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="row">
+    <!-- Project 1 -->
+    <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="single-cases mb-40">
+            <div class="cases-img">
+                <a href='/project_details?id=medical-camps'><img src="assets/img/gallery/project_flood_camp.jpeg" alt="" style="width: 100%; height: 250px; object-fit: cover;"></a>
+            </div>
+            <div class="cases-caption" style="padding: 30px;">
+                <h3><a href='/project_details?id=medical-camps'>Medical Camp for Flood Effected areas of Sindh 2022</a></h3>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Project 2 -->
+    <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="single-cases mb-40">
+            <div class="cases-img">
+                <a href='/project_details?id=emergency-relief'><img src="assets/img/gallery/project_relief.jpeg" alt="" style="width: 100%; height: 250px; object-fit: cover;"></a>
+            </div>
+            <div class="cases-caption" style="padding: 30px;">
+                <h3><a href='/project_details?id=emergency-relief'>Disaster Response & Social Welfare</a></h3>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Project 3 -->
+    <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="single-cases mb-40">
+            <div class="cases-img">
+                <a href='/project_details?id=education-initiatives'><img src="assets/img/gallery/project_education.jpeg" alt="" style="width: 100%; height: 250px; object-fit: cover;"></a>
+            </div>
+            <div class="cases-caption" style="padding: 30px;">
+                <h3><a href='/project_details?id=education-initiatives'>Students Supported in Local Education Initiatives</a></h3>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Project 4 -->
+    <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="single-cases mb-40">
+            <div class="cases-img">
+                <a href='/project_details?id=flood-medical'><img src="assets/img/gallery/project_flood_medical.jpeg" alt="" style="width: 100%; height: 250px; object-fit: cover;"></a>
+            </div>
+            <div class="cases-caption" style="padding: 30px;">
+                <h3><a href='/project_details?id=flood-medical'>Wheelchair Distribution and Support for Disabled Persons</a></h3>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Project 5 -->
+    <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="single-cases mb-40">
+            <div class="cases-img">
+                <a href='/project_details?id=ramzan-rashan'><img src="assets/img/gallery/project_ramzan_rashan.jpeg" alt="" style="width: 100%; height: 250px; object-fit: cover;"></a>
+            </div>
+            <div class="cases-caption" style="padding: 30px;">
+                <h3><a href='/project_details?id=ramzan-rashan'>Rashan Distribution in the Month of Ramzan</a></h3>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Project 6 -->
+    <div class="col-lg-4 col-md-6 col-sm-6">
+        <div class="single-cases mb-40">
+            <div class="cases-img">
+                <a href='/project_details?id=tree-plantation'><img src="assets/img/gallery/project_tree_plantation.jpeg" alt="" style="width: 100%; height: 250px; object-fit: cover;"></a>
+            </div>
+            <div class="cases-caption" style="padding: 30px;">
+                <h3><a href='/project_details?id=tree-plantation'>Tree Plantations for Green Environment</a></h3>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    <!-- Our Projects End -->
+        <!-- Our Workings Start -->
+    <!-- <section class="featured-job-area section-padding30 section-bg2" data-background="assets/img/gallery/section_bg03.png"> -->
+    <section class="featured-job-area section-bg2" data-background="assets/img/gallery/section_bg03.png" style="padding-top: 60px !important; padding-bottom: 20px !important;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-7 col-lg-9 col-md-10 col-sm-12">
+                    <!-- Section Tittle -->
+                    <div class="section-tittle text-center mb-80">
+                        <span>What we are doing</span>
+                        <h2>Our Workings</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-9 col-md-12">
+                    <!-- single-job-content -->
+                    <div class="single-job-items mb-30">
+                        <div class="job-items align-items-center">
+                            <div class="company-img">
+                                <a href='/our-workings'><img src="assets/img/gallery/working_education.jpeg" alt="" style="width: 150px; border-radius: 5px;"></a>
+                            </div>
+                            <div class="job-tittle">
+                                <a href='/our-workings'><h4>Education for the Future</h4></a>
+                                <ul>
+                                    <li style="white-space: normal;"><strong>Nurturing Minds and the Environment</strong><br>We firmly believe that education is the absolute foundation of any sustainable, thriving community. We are committed to breaking the cycle of poverty by empowering the next generation. Makeshift & Local Schools: We actively fund and support local learning centers, providing vital resources, books, and safe outdoor school settings for children who lack access to formal infrastructure. Environmental Stewardship: Education goes beyond the classroom. We foster a strong spirit of environmental responsibility in our youth by organizing interactive tree-planting campaigns and climate awareness drives. The Goal: To cultivate educated, environmentally conscious citizens who will lead Sindh into a sustainable future.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-12">
+                    <!-- single-job-content -->
+                    <div class="single-job-items mb-30">
+                        <div class="job-items align-items-center">
+                            <div class="company-img">
+                                <a href='/our-workings'><img src="assets/img/gallery/working_relief.jpeg" alt="" style="width: 150px; border-radius: 5px;"></a>
+                            </div>
+                            <div class="job-tittle">
+                                <a href='/our-workings'><h4>Disaster Response & Social Welfare</h4></a>
+                                <ul>
+                                    <li style="white-space: normal;"><strong>Standing Resilient Against Climate Adversity</strong><br>Sindh is increasingly vulnerable to extreme weather and climate adversity. When disaster strikes, the SDGS Welfare Organization is immediately on the ground, serving as a vital lifeline for affected families. Crisis Intervention: We specialize in rapid response, from distributing emergency food rations and survival supplies to families facing sudden displacement or extreme poverty. Heat Wave Relief: During life-threatening summer temperatures, we proactively set up heat wave relief camps, providing critical hydration, shade, and medical support to prevent heatstroke and save lives. The Goal: To ensure that no individual is left behind during a crisis, providing the immediate relief necessary to help communities get back on their feet.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-12">
+                    <!-- single-job-content -->
+                    <div class="single-job-items mb-30">
+                        <div class="job-items align-items-center">
+                            <div class="company-img">
+                                <a href='/our-workings'><img src="assets/img/gallery/working_medical.jpeg" alt="" style="width: 150px; border-radius: 5px;"></a>
+                            </div>
+                            <div class="job-tittle">
+                                <a href='/our-workings'><h4>Emergency Medical Relief</h4></a>
+                                <ul>
+                                    <li style="white-space: normal;"><strong>Bridging the Gap in Healthcare Access</strong><br>In many remote and disaster-affected areas of Sindh, basic medical care is completely out of reach. We organize heavily equipped, free medical camps to bring healthcare directly to the vulnerable. Our Approach: Using our red mobile medical vans, our dedicated teams of volunteer doctors and nurses travel to underserved communities. Services Provided: We offer comprehensive health check-ups, essential diagnostics, and free medicine distribution to families who otherwise could not afford treatment. The Goal: To prevent minor illnesses from becoming life-threatening and to ensure maternal and pediatric health remains a priority, no matter the location.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Workings End -->
+    <!--? Team Ara Start -->
+    <!-- <div class="team-area pt-160 pb-160"> -->
+    <!--? Team Ara Start -->
+<div class="team-area" style="padding-top: 60px !important; padding-bottom: 40px !important;">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-7 col-md-10 col-sm-10">
+                    <!-- Section Tittle -->
+                    <div class="section-tittle section-tittle2 text-center mb-70">
+                        <span>What we are doing</span>
+                        <h2>Our Expert Volunteer Always ready</h2>
+                    </div> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-team mb-30">
+                        <div class="team-img">
+                            <img src="assets/img/gallery/Team-1.jpeg" alt="">
+                            <!-- Blog Social -->
+                            <ul class="team-social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fas fa-globe"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-caption">
+                            <h3><a href="instructor.html">Nasir Morai</a></h3>
+                            <p>Volunteer leader</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-team mb-30">
+                        <div class="team-img">
+                            <img src="assets/img/gallery/Team-1.jpeg" alt="">
+                            <!-- Blog Social -->
+                            <ul class="team-social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fas fa-globe"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-caption">
+                            <h3><a href="instructor.html">Nasir Morai</a></h3>
+                            <p>Volunteer leader</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-team mb-30">
+                        <div class="team-img">
+                            <img src="assets/img/gallery/Team-1.jpeg" alt="">
+                            <!-- Blog Social -->
+                            <ul class="team-social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fas fa-globe"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-caption">
+                            <h3><a href="instructor.html">Nasir Morai</a></h3>
+                            <p>Volunteer leader</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="single-team mb-30">
+                        <div class="team-img">
+                            <img src="assets/img/gallery/Team-1.jpeg" alt="">
+                            <!-- Blog Social -->
+                            <ul class="team-social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fas fa-globe"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="team-caption">
+                            <h3><a href="instructor.html">Nasir Morai</a></h3>
+                            <p>Volunteer leader</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team Ara End -->
+    <!-- Want To work -->
+    <section class="wantToWork-area ">
+        <div class="container">
+            <div class="wants-wrapper w-padding2  section-bg" data-background="assets/img/gallery/section_bg01.png">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-xl-5 col-lg-9 col-md-8">
+                        <div class="wantToWork-caption wantToWork-caption2">
+                            <h2>Lets Chenge The World With Humanity</h2>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4">
+                        <a href="#" class="btn white-btn f-right sm-left">Become A Volunteer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Want To work End -->
+    <!--? Testimonial Start -->
+    
+    <!-- Testimonial End -->
+    <!--? Blog Area Start -->
+    
+    <!-- Blog Area End -->
+    <!--? Count Down Start -->
+    <div class="count-down-area pt-25 section-bg" data-background="assets/img/gallery/section_bg02.png">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8 col-lg-9 col-md-10 col-sm-12 mt-50">
+                    <!-- Section Tittle -->
+                    <div class="section-tittle text-center mb-80">
+                        <span style="color: #09cc7f;">Our Impact</span>
+                        <h2 style="color: #fff;">Real Change, Measurable Impact</h2>
+                        <p style="color: #fff; font-size: 18px;">Transparency and results are at the core of what we do. Here is a snapshot of our ongoing efforts across the region:</p>
+                        <div id="impact-map-placeholder" style="background: rgba(0,0,0,0.5); padding: 20px; border: 1px dashed #09cc7f; border-radius: 5px;">
+                            <p style="color: #09cc7f; margin: 0;"><em>Interactive Impact Map: [Interactive map highlighting served regions, specifically pinpointing active zones like Moro and Hyderabad]</em></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-12 col-md-12">
+                    <div class="count-down-wrapper" >
+                        <div class="row justify-content-between">
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <!-- Counter Up -->
+                                <div class="single-counter text-center">
+                                    <span class="counter color-green">500</span>
+                                    <span class="plus">+</span>
+                                    <p class="color-green">Patients Treated in Free Medical Camps</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <!-- Counter Up -->
+                                <div class="single-counter text-center">
+                                    <span class="counter color-green">120</span>
+                                    <span class="plus">+</span>
+                                    <p class="color-green">Disaster Response & Social Welfare</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-6">
+                                <!-- Counter Up -->
+                                <div class="single-counter text-center">
+                                    <span class="counter color-green">1050</span>
+                                    <span class="plus">+</span>
+                                    <p class="color-green">Students Supported in Local Education Initiatives</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Count Down End -->
+    </main>
+    <footer>
+        <div class="footer-wrapper section-bg2" data-background="assets/img/gallery/footer_bg.png">
+            <!-- Footer Top-->
+            <div class="footer-area footer-padding">
+                <div class="container">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                        <div class="single-footer-caption mb-50">
+                            <div class="single-footer-caption mb-30">
+                                <div class="footer-tittle">
+                                    <div class="footer-logo mb-20">
+                                        <a href='/'><img src="assets/img/logo/SDGS-logo-landscape.png" alt="SDGS Welfare Organization"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Contact Info</h4>
+                                    <ul>
+                                        <li>
+                                            <p>Address :Suit-30, 3rd Floor, Snow White Complex, Shahrah e Faisal Karachi, Sindh-Pakistan</p>
+                                        </li>
+                                        <li><a href="#">Phone : 021-31386683</a></li>
+                                        <li><a href="#">Cell : 0314-2220220</a></li>
+                                        <li><a href="#">Email : info@sdgs.com</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Important Link</h4>
+                                    <ul>
+                                        <li><a href='/projects'>View Projects</a></li>
+                                        <li><a href='/contact'>Contact Us</a></li>
+                                        <li><a href='/about'>About Us</a></li>
+                                        <li><a href='/our-workings'>Our Workings</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-5 d-none">
+                            <div class="single-footer-caption mb-50">
+                                <div class="footer-tittle">
+                                    <h4>Newsletter</h4>
+                                    <div class="footer-pera footer-pera2">
+                                    <p>Heaven fruitful doesn't over lesser in days. Appear creeping.</p>
+                                </div>
+                                <!-- Form -->
+                                <!-- <div class="footer-form" >
+                                    <div id="mc_embed_signup">
+                                        <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                        method="get" class="subscribe_form relative mail_part">
+                                            <input type="email" name="email" id="newsletter-form-email" placeholder="Email Address"
+                                            class="placeholder hide-on-focus" onfocus="this.placeholder = ''"
+                                            onblur="this.placeholder = ' Email Address '">
+                                            <div class="form-icon">
+                                                <button type="submit" name="submit" id="newsletter-submit"
+                                                class="email_icon newsletter-submit button-contactForm"><img src="assets/img/gallery/form.png" alt=""></button>
+                                            </div>
+                                            <div class="mt-10 info"></div>
+                                        </form>
+                                    </div>
+                                </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer-bottom -->
+            <div class="footer-bottom-area">
+                <div class="container">
+                    <div class="footer-border">
+                        <div class="row d-flex justify-content-between align-items-center">
+                            <div class="col-xl-10 col-lg-9 ">
+                                <div class="footer-copy-right">
+                                    <p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | SDGS Welfare Organization
+  </p>
+                                </div>
+                            </div>
+                            <div class="col-xl-2 col-lg-3">
+                                <div class="footer-social f-right">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a  href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fas fa-globe"></i></a>
+                                    <a href="#"><i class="fab fa-behance"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Up -->
+    <div id="back-top" >
+        <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+    </div>
+
+    <!-- JS here -->
+
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- Date Picker -->
+    <script src="./assets/js/gijgo.min.js"></script>
+    <!-- Nice-select, sticky -->
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
+    <!-- Progress -->
+    <script src="./assets/js/jquery.barfiller.js"></script>
+    
+    <!-- counter , waypoint,Hover Direction -->
+    <script src="./assets/js/jquery.counterup.min.js"></script>
+    <script src="./assets/js/waypoints.min.js"></script>
+    <script src="./assets/js/jquery.countdown.min.js"></script>
+    <script src="./assets/js/hover-direction-snake.min.js"></script>
+
+    <!-- contact js -->
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+    
+    <!-- Jquery Plugins, main Jquery -->	
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+    
+    </body>
+</html>
