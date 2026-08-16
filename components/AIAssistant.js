@@ -143,6 +143,14 @@ export default function AIAssistant() {
                 </button>
               ))}
             </div>
+            <a
+              href="https://try.elevenlabs.io/a9ib2qxc3t8h"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 block rounded-xl bg-white/10 px-4 py-2.5 text-center text-xs text-emerald-300 transition-colors hover:bg-white/20"
+            >
+              🎙️ Powered by ElevenLabs — Try Voice Ai
+            </a>
           </div>
 
           <form

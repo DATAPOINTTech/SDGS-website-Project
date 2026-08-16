@@ -111,6 +111,27 @@ export default function Home() {
         </section>
 
         <section className="container-custom py-16">
+          <div className="flex flex-col items-center gap-8 rounded-3xl bg-gradient-to-r from-emerald-600 to-teal-600 p-10 text-center text-white shadow-2xl md:flex-row md:justify-between md:text-left">
+            <div>
+              <span className="text-sm font-semibold uppercase tracking-wider text-emerald-100">Partner Spotlight</span>
+              <h2 className="mt-2 text-3xl font-extrabold">Try ElevenLabs Voice Ai</h2>
+              <p className="mt-3 max-w-xl leading-relaxed text-emerald-50">
+                ElevenLabs powers the world's most realistic Ai voice experiences. Sign up through our referral link and
+                start creating lifelike text-to-speech and voice Ai today.
+              </p>
+            </div>
+            <a
+              href="https://try.elevenlabs.io/a9ib2qxc3t8h"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 rounded-xl bg-white px-8 py-4 text-lg font-bold text-emerald-700 shadow-lg transition-transform hover:scale-105"
+            >
+              Get Started →
+            </a>
+          </div>
+        </section>
+
+        <section className="container-custom py-16">
           <div className="text-center">
             <span className="text-sm font-semibold uppercase tracking-wider text-emerald-600">Voices</span>
             <h2 className="mt-2 text-3xl font-extrabold text-slate-900">Stories From Our Community</h2>
