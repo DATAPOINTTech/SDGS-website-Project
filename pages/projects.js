@@ -16,7 +16,7 @@ export default function Projects() {
   useEffect(() => {
     const { slug, category: c } = router.query
     if (slug === 'ai-mazdoor' || c) {
-      const target = slug === 'ai-mazdoor' ? 'AI & Digital Empowerment' : c
+      const target = slug === 'ai-mazdoor' ? 'Ai & Digital Empowerment' : c
       if (target) setCategory(target)
     }
   }, [router.query])
@@ -39,7 +39,7 @@ export default function Projects() {
             <span className="text-sm font-semibold uppercase tracking-wider text-emerald-300">Our Work</span>
             <h1 className="mt-2 text-4xl font-extrabold md:text-5xl">Projects & Impact</h1>
             <p className="mt-3 max-w-2xl text-slate-200">
-              From emergency relief to our flagship AI-Mazdoor platform, discover how we turn action into lasting change across Sindh.
+              From emergency relief to our flagship Ai-Mazdoor platform, discover how we turn action into lasting change across Sindh.
             </p>
           </div>
         </section>

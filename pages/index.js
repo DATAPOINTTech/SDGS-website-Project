@@ -25,7 +25,7 @@ export default function Home() {
               <p className="mt-3 leading-relaxed text-slate-600">
                 We are a dedicated group of professionals, volunteers, and humanitarians working tirelessly to build
                 sustainable communities through direct action — providing essential healthcare, quality education,
-                rapid relief, and now AI-powered digital empowerment.
+                rapid relief, and now Ai-powered digital empowerment.
               </p>
             </div>
             <div className="grid gap-4 sm:grid-cols-3">
@@ -91,17 +91,17 @@ export default function Home() {
                 ))}
               </div>
               <a href="/project_details?slug=ai-mazdoor" className="btn-primary mt-8">
-                Learn More About AI-Mazdoor
+                Learn More About Ai-Mazdoor
               </a>
             </div>
             <div className="glass rounded-3xl p-8">
               <div className="grid gap-4 sm:grid-cols-2">
-                {['AI Skills Matching', 'Digital Worker IDs', 'Transparent Wages', 'Upskilling Guidance'].map((f, i) => (
+                {['Ai Skills Matching', 'Digital Worker IDs', 'Transparent Wages', 'Upskilling Guidance'].map((f, i) => (
                   <div key={f} className="rounded-2xl bg-white/10 p-5">
                     <span className="text-2xl">{['🎯', '🪪', '💰', '📈'][i]}</span>
                     <p className="mt-3 font-semibold">{f}</p>
                     <p className="mt-1 text-sm text-slate-300">
-                      {['Smart pairing of workers to verified jobs', 'Portable verifiable employment history', 'Fair-payment guarantees for every mazdoor', 'AI-guided skills and financial literacy'][i]}
+                      {['Smart pairing of workers to verified jobs', 'Portable verifiable employment history', 'Fair-payment guarantees for every mazdoor', 'Ai-guided skills and financial literacy'][i]}
                     </p>
                   </div>
                 ))}

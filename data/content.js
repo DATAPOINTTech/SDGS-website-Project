@@ -3,7 +3,7 @@ export const SITE = {
   fullName: 'Sustainable Developed Green Sindh (SDGS) Welfare Organization',
   tagline: 'Empowering Communities, Transforming Lives in Sindh',
   description:
-    'A grassroots social welfare NGO guided by the Sustainable Development Goals (SDGs), dedicated to essential healthcare, quality education, rapid relief, and AI-powered digital empowerment across Sindh, Pakistan.',
+    'A grassroots social welfare NGO guided by the Sustainable Development Goals (SDGs), dedicated to essential healthcare, quality education, rapid relief, and Ai-powered digital empowerment across Sindh, Pakistan.',
   address: 'Suit-30, 3rd Floor, Snow White Complex, Shahrah e Faisal, Karachi, Sindh, Pakistan',
   phone: '021-31386683',
   cell: '0314-2220220',
@@ -48,25 +48,25 @@ export const PILLARS = [
 export const PROJECTS = [
   {
     slug: 'ai-mazdoor',
-    title: 'AI-Mazdoor — AI-Powered Livelihood Platform',
-    tagline: 'Connecting workers with decent work through AI',
-    category: 'AI & Digital Empowerment',
+    title: 'Ai-Mazdoor — Ai-Powered Livelihood Platform',
+    tagline: 'Connecting workers with decent work through Ai',
+    category: 'Ai & Digital Empowerment',
     status: 'Latest',
-    image: '/images/relief.jpeg',
+    image: '/images/ai-mazdoor.png',
     sdgs: [1, 8, 9],
     summary:
-      'Our flagship digital project, AI-Mazdoor (مزدور, "worker"), is an AI-powered platform that connects informal workers with fair, decent work opportunities across Sindh. Using intelligent skills matching, digital ID verification, and transparent wage tracking, it empowers mazdoors to earn with dignity.',
-    description: `AI-Mazdoor is our latest project and a cornerstone of our digital transformation vision. The platform uses an intelligent AI agent to match workers — from daily-wage laborers and domestic workers to artisans and drivers — with verified employers and fair wage opportunities.
+      'Our flagship digital project, Ai-Mazdoor (مزدور, "worker"), is an Ai-powered platform that connects informal workers with fair, decent work opportunities across Sindh. Using intelligent skills matching, digital ID verification, and transparent wage tracking, it empowers mazdoors to earn with dignity.',
+    description: `Ai-Mazdoor is our latest project and a cornerstone of our digital transformation vision. The platform uses an intelligent Ai agent to match workers — from daily-wage laborers and domestic workers to artisans and drivers — with verified employers and fair wage opportunities.
 
 Key features include:
-• AI skills matching that pairs workers with suitable work based on their experience.
+• Ai skills matching that pairs workers with suitable work based on their experience.
 • Digital worker IDs that build a portable, verifiable employment history.
 • Transparent wage tracking and fair-payment guarantees.
-• Financial literacy and upskilling guidance delivered through the AI agent.
+• Financial literacy and upskilling guidance delivered through the Ai agent.
 • Partnerships with local employers to open doors for thousands of informal workers.
 
-By combining artificial intelligence with grassroots reach, AI-Mazdoor directly advances SDG 1 (No Poverty), SDG 8 (Decent Work & Economic Growth), and SDG 9 (Industry, Innovation & Infrastructure).`,
-    impact: 'Targeting thousands of informal workers connected to decent, AI-matched work opportunities with fair wages.',
+By combining artificial intelligence with grassroots reach, Ai-Mazdoor directly advances SDG 1 (No Poverty), SDG 8 (Decent Work & Economic Growth), and SDG 9 (Industry, Innovation & Infrastructure).`,
+    impact: 'Targeting thousands of informal workers connected to decent, Ai-matched work opportunities with fair wages.',
   },
   {
     slug: 'medical-camps',
@@ -190,9 +190,9 @@ export const TESTIMONIALS = [
   },
   {
     name: 'Rashid Ahmed',
-    role: 'Registered Worker, AI-Mazdoor',
+    role: 'Registered Worker, Ai-Mazdoor',
     quote:
-      'AI-Mazdoor helped me find daily work and the app made sure I got paid what I was promised. It changed how I look for work.',
+      'Ai-Mazdoor helped me find daily work and the app made sure I got paid what I was promised. It changed how I look for work.',
   },
   {
     name: 'Sana Memon',

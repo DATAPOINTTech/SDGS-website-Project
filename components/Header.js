@@ -33,7 +33,7 @@ export default function Header() {
             <img src="/images/logo.png" alt="SDGS" className="h-7 object-contain" />
           </span>
           <span className="hidden text-sm font-bold text-slate-900 md:block">
-            Sustainable Developed <span className="font-normal text-emerald-600">Green Sindh</span>
+            Sustainable Developed <span className="text-emerald-600">Green Sindh</span>
           </span>
         </Link>
 

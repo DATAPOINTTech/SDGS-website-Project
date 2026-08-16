@@ -18,7 +18,7 @@ export default function Contact() {
             <span className="text-sm font-semibold uppercase tracking-wider text-emerald-300">Contact Us</span>
             <h1 className="mt-2 text-4xl font-extrabold md:text-5xl">Get in Touch</h1>
             <p className="mt-3 max-w-2xl text-slate-200">
-              Donate, volunteer, partner with us, or ask about AI-Mazdoor — we would love to hear from you.
+              Donate, volunteer, partner with us, or ask about Ai-Mazdoor — we would love to hear from you.
             </p>
           </div>
         </section>
@@ -32,7 +32,7 @@ export default function Contact() {
                   <span className="text-4xl">✅</span>
                   <p className="mt-3 font-semibold text-emerald-700">Thank you, {form.name || 'friend'}!</p>
                   <p className="mt-1 text-sm text-emerald-600">
-                    Your message has been recorded. For an instant response, try the AI Assistant (bottom right).
+                    Your message has been recorded. For an instant response, try the Ai Assistant (bottom right).
                   </p>
                   <button onClick={() => setSent(false)} className="btn-outline mt-5 border-emerald-500 text-emerald-600">
                     Send Another
@@ -69,7 +69,7 @@ export default function Contact() {
                     name="subject"
                     value={form.subject}
                     onChange={update}
-                    placeholder="Subject (e.g. Volunteer, Donate, AI-Mazdoor)"
+                    placeholder="Subject (e.g. Volunteer, Donate, Ai-Mazdoor)"
                     className="w-full rounded-xl border border-slate-200 px-4 py-3 text-sm outline-none focus:ring-2 focus:ring-emerald-400"
                   />
                   <textarea
@@ -95,17 +95,17 @@ export default function Contact() {
                   <p className="flex gap-3"><span className="text-lg">✉️</span> {SITE.email}</p>
                 </div>
                 <div className="mt-6 rounded-2xl bg-slate-50 p-4 text-xs text-slate-500">
-                  💡 Tip: Ask the AI Assistant (bottom right) for instant answers about projects, SDG goals, and how to get involved.
+                  💡 Tip: Ask the Ai Assistant (bottom right) for instant answers about projects, SDG goals, and how to get involved.
                 </div>
               </div>
               <div className="rounded-3xl bg-gradient-to-br from-emerald-600 to-teal-600 p-8 text-white shadow-2xl">
-                <h3 className="text-xl font-bold">🤖 Try AI-Mazdoor</h3>
+                <h3 className="text-xl font-bold">🤖 Try Ai-Mazdoor</h3>
                 <p className="mt-2 text-sm text-emerald-50">
-                  AI-Mazdoor is transforming how informal workers find fair work in Sindh. Interested in partnering or
-                  learning more? Reach out and our AI assistant will guide you.
+                  Ai-Mazdoor is transforming how informal workers find fair work in Sindh. Interested in partnering or
+                  learning more? Reach out and our Ai assistant will guide you.
                 </p>
                 <a href="/project_details?slug=ai-mazdoor" className="mt-4 inline-flex rounded-xl bg-white/20 px-5 py-2.5 text-sm font-semibold transition-colors hover:bg-white/30">
-                  Explore AI-Mazdoor →
+                  Explore Ai-Mazdoor →
                 </a>
               </div>
             </div>

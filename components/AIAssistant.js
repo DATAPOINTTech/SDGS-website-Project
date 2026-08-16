@@ -3,7 +3,7 @@ import { getAIAnswer, getQuickReplies } from '../lib/aiAssistant'
 
 const WELCOME = {
   role: 'ai',
-  text: "Hello! I'm the SDGS AI Assistant. Ask me anything about AI-Mazdoor, our projects, services, SDG goals, or how to donate and volunteer.",
+  text: "Hello! I'm the SDGS Ai Assistant. Ask me anything about Ai-Mazdoor, our projects, services, SDG goals, or how to donate and volunteer.",
 }
 
 function typingSimulation(text, onTick, done) {
@@ -76,7 +76,7 @@ export default function AIAssistant() {
       <button
         onClick={() => setOpen(!open)}
         className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-emerald-500 to-teal-600 text-2xl text-white shadow-2xl transition-transform duration-200 hover:scale-110"
-        aria-label="Open AI assistant"
+        aria-label="Open Ai assistant"
       >
         {open ? (
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
@@ -92,7 +92,7 @@ export default function AIAssistant() {
           <div className="flex items-center gap-3 bg-gradient-to-r from-emerald-500 to-teal-600 px-5 py-4">
             <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white/20 text-xl">🤖</div>
             <div>
-              <p className="font-bold text-white">SDGS AI Assistant</p>
+              <p className="font-bold text-white">SDGS Ai Assistant</p>
               <p className="text-xs text-emerald-100">
                 <span className="mr-1 inline-block h-2 w-2 rounded-full bg-green-300" />
                 Online • Knowledge agent

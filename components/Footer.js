@@ -20,7 +20,7 @@ export default function Footer() {
             <Link href="/services" className="hover:text-emerald-400">Services</Link>
             <Link href="/contact" className="hover:text-emerald-400">Contact</Link>
             <Link href="/environment" className="hover:text-emerald-400">Environment</Link>
-            <Link href="/projects?slug=ai-mazdoor" className="hover:text-emerald-400">AI-Mazdoor</Link>
+            <Link href="/projects?slug=ai-mazdoor" className="hover:text-emerald-400">Ai-Mazdoor</Link>
           </div>
         </div>
         <div>
@@ -34,7 +34,7 @@ export default function Footer() {
         <div className="container-custom flex flex-col items-center justify-between gap-2 py-5 text-sm text-slate-400 md:flex-row">
           <p>Copyright ©{new Date().getFullYear()} All rights reserved | {SITE.name}</p>
           <p className="flex items-center gap-1.5">
-            Powered by <span className="font-semibold text-emerald-400">AI-Mazdoor</span> 🤖
+            Powered by <span className="font-semibold text-emerald-400">Ai-Mazdoor</span> 🤖
           </p>
         </div>
       </div>

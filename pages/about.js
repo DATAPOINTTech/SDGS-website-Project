@@ -26,7 +26,7 @@ export default function About() {
             </p>
             <p className="mt-4 leading-relaxed text-slate-600">
               Guided by all 17 UN Sustainable Development Goals, we deliver emergency medical relief, disaster response,
-              education initiatives, and now AI-powered digital empowerment through our flagship AI-Mazdoor platform.
+              education initiatives, and now Ai-powered digital empowerment through our flagship Ai-Mazdoor platform.
             </p>
 
             <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-4">

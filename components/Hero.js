@@ -11,7 +11,7 @@ export default function Hero() {
         <div className="animate-fade-up">
           <span className="inline-flex items-center gap-2 rounded-full border border-emerald-300/30 bg-emerald-400/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-emerald-200">
             <span className="h-2 w-2 animate-blink rounded-full bg-emerald-400" />
-            Grassroots • AI-Powered • SDG-Aligned
+            Grassroots • Ai-Powered • SDG-Aligned
           </span>
           <h1 className="mt-6 text-4xl font-extrabold leading-tight md:text-6xl">
             {SITE.tagline.split('Transforming')[0]}
@@ -23,7 +23,7 @@ export default function Hero() {
               Explore Our Work
             </Link>
             <Link href="/projects?slug=ai-mazdoor" className="btn-outline border-white/40 text-white hover:bg-white/10">
-              <span>🤖</span> Meet AI-Mazdoor
+              <span>🤖</span> Meet Ai-Mazdoor
             </Link>
           </div>
         </div>
@@ -35,20 +35,20 @@ export default function Hero() {
                 🤖
               </div>
               <div>
-                <p className="font-bold">AI-Mazdoor</p>
-                <p className="text-sm text-slate-300">AI-powered livelihood platform</p>
+                <p className="font-bold">Ai-Mazdoor</p>
+                <p className="text-sm text-slate-300">Ai-powered livelihood platform</p>
               </div>
               <span className="ml-auto rounded-full bg-emerald-400/20 px-3 py-1 text-xs font-semibold text-emerald-300">
                 Latest Project
               </span>
             </div>
             <p className="mt-6 text-sm leading-relaxed text-slate-200">
-              Using an intelligent AI agent, AI-Mazdoor matches informal workers with verified, fair-wage job
+              Using an intelligent Ai agent, Ai-Mazdoor matches informal workers with verified, fair-wage job
               opportunities across Sindh — bringing dignity and decent work to every mazdoor.
             </p>
             <div className="mt-6 grid grid-cols-2 gap-3">
               <div className="rounded-2xl bg-white/10 p-4">
-                <p className="text-2xl font-extrabold text-emerald-300">AI</p>
+                <p className="text-2xl font-extrabold text-emerald-300">Ai</p>
                 <p className="text-xs text-slate-300">Skills matching agent</p>
               </div>
               <div className="rounded-2xl bg-white/10 p-4">

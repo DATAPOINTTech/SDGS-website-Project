@@ -5,8 +5,8 @@ import { PILLARS } from '../data/content'
 const EXTRAS = [
   {
     icon: '🤖',
-    title: 'AI-Mazdoor Platform',
-    description: 'AI-powered skills matching, digital worker IDs, and transparent wages connecting informal workers to decent work.',
+    title: 'Ai-Mazdoor Platform',
+    description: 'Ai-powered skills matching, digital worker IDs, and transparent wages connecting informal workers to decent work.',
   },
   {
     icon: '🩺',
